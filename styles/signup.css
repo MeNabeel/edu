@@ -1,0 +1,92 @@
+/* Sign Up Page Styles */
+.signup-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; /* Ensure the section takes up most of the viewport height */
+    background: url('https://images.unsplash.com/photo-1737031681027-fb111b4b745f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+    padding: 2rem;
+  }
+  
+  .signup-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin: 0 auto; /* Center the container horizontally */
+  }
+  
+  .signup-container h2 {
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .form-group input:focus {
+    outline: none;
+    border-color: #ff6f61;
+  }
+  
+  .btn {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Make the button full width */
+  }
+  
+  .btn:hover {
+    background-color: #e65a50;
+  }
+  
+  .login-link {
+    margin-top: 1rem;
+    color: #333;
+  }
+  
+  .login-link a {
+    color: #ff6f61;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .login-link a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .signup-container {
+      padding: 1.5rem;
+    }
+  
+    .signup-section {
+      padding: 1rem;
+    }
+  }

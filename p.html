@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secret Society</title>
+  <link rel="stylesheet" href="styles/global.css">
+  <style>
+    /* Secret Society Page Styles */
+   /* body {
+    background: url('https://images.unsplash.com/photo-1643421500761-85acd909a772?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGlsbHVtaW5hdGl8ZW58MHx8MHx8fDA%3D') no-repeat center center/cover;
+    color: #fff;
+  }*/
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Courier New', Courier, monospace;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #8b0000; /* Dark red */
+      text-shadow: 0 0 10px #ff0000;
+      animation: flicker 1.5s infinite alternate;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin: 1rem 0;
+      color: #ccc;
+    }
+
+    .button {
+      background-color: #8b0000;
+      color: #fff;
+      padding: 0.8rem 2rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      margin-top: 2rem;
+    }
+
+    .button:hover {
+      background-color: #ff0000;
+    }
+
+    /* Slideshow Styles */
+    .slideshow {
+      width: 100%;
+      max-width: 600px;
+      margin: 2rem auto;
+      position: relative;
+      overflow: hidden;
+      border: 2px solid #8b0000;
+      border-radius: 10px;
+    }
+
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+
+    .slide {
+      min-width: 100%;
+      box-sizing: border-box;
+    }
+
+    .slide img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .slide h3 {
+      margin: 1rem 0;
+      color: #8b0000;
+      font-size: 1.5rem;
+    }
+
+    .slide p {
+      color: #ccc;
+      font-size: 1rem;
+    }
+
+    @keyframes flicker {
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0.7;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to the Secret Society</h1>
+    <p>To achieve ultimate success, you must make a choice.</p>
+    <p>Sell your soul to the devil, and all your dreams will come true.</p>
+    <p>But remember, there is no turning back.</p>
+    <p>Proceed with caution.</p>
+
+    <!-- Agreement Button -->
+    <button id="agreementBtn" class="button">I Agree to the Terms</button>
+
+    <!-- Slideshow Section -->
+    <div class="slideshow">
+      <div class="slides">
+        <div class="slide">
+          <img src="https://media.istockphoto.com/id/1483625643/photo/human-hands-silhouette-behind-frosted-glass.webp?a=1&b=1&s=612x612&w=0&k=20&c=Y6ZVWLvuzrWH_t-G5FbreVyJXd3wm3-_5018n_gy5gA=" alt="Dark Forest">
+          <h3>The Path of Shadows</h3>
+          <p>Enter the unknown and embrace the darkness.</p>
+        </div>
+        <div class="slide">
+          <img src="https://media.istockphoto.com/id/1327271183/photo/ghost-in-the-dungeon.webp?a=1&b=1&s=612x612&w=0&k=20&c=t5L6_BU5h18iVDFK7GseTMLiDCgQAkpdrKk1TQiuYEc=" alt="Ritual Fire">
+          <h3>The Ritual</h3>
+          <p>Perform the sacred ritual to gain power.</p>
+        </div>
+        <div class="slide">
+          <img src="https://plus.unsplash.com/premium_photo-1681488227384-0f4d02683dd7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c2F0YW58ZW58MHx8MHx8fDA%3D" alt="Mystery Night">
+          <h3>The Night of Secrets</h3>
+          <p>Unlock the secrets hidden in the night.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Return to Home Button -->
+    <a href="home.html" class="button">Return to Home</a>
+  </div>
+
+  <!-- Console Login System -->
+  <script>
+    console.log("%cWelcome to the Secret Society", "color: #8b0000; font-size: 20px; font-weight: bold;");
+    console.log("%cTo proceed, enter the secret password.", "color: #ccc; font-size: 16px;");
+
+    const secretPassword = "sellYourSoul"; // Set the secret password
+    let attempts = 3; // Number of attempts allowed
+
+    function checkPassword() {
+      const password = prompt("Enter the secret password:");
+      if (password === secretPassword) {
+        console.log("%cAccess granted. Welcome, initiate.", "color: #00ff00; font-size: 16px;");
+        alert("Access granted. Welcome, initiate.");
+      } else {
+        attempts--;
+        if (attempts > 0) {
+          console.log(`%cIncorrect password. ${attempts} attempts remaining.`, "color: #ff0000; font-size: 16px;");
+          alert(`Incorrect password. ${attempts} attempts remaining.`);
+          checkPassword(); // Retry
+        } else {
+          console.log("%cAccess denied. You are not worthy.", "color: #ff0000; font-size: 16px;");
+          alert("Access denied. You are not worthy.");
+        }
+      }
+    }
+
+    checkPassword(); // Trigger the password check
+
+    // Agreement Button Logic
+    const agreementBtn = document.getElementById("agreementBtn");
+    agreementBtn.addEventListener("click", () => {
+      alert("You have agreed to the terms. There is no turning back now.");
+    });
+
+    // Auto Slideshow Logic
+    const slides = document.querySelector(".slides");
+    const slidesCount = document.querySelectorAll(".slide").length;
+    let currentSlideIndex = 0;
+
+    function showNextSlide() {
+      currentSlideIndex = (currentSlideIndex + 1) % slidesCount;
+      slides.style.transform = `translateX(-${currentSlideIndex * 100}%)`;
+    }
+
+    setInterval(showNextSlide, 5000); // Change slide every 5 seconds
+  </script>
+</body>
+</html>

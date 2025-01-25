@@ -1,0 +1,74 @@
+/* Courses Page Styles */
+body {
+    background: url('https://images.unsplash.com/photo-1737031681027-fb111b4b745f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+    color: #fff;
+  }
+.courses {
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+  .course-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  
+  .course-card {
+    background: rgba(255, 255, 255, 0.9); 
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .course-card h3 {
+    margin: 1rem 0;
+    color: #333;
+  }
+  
+  .roadmap-btn {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .roadmap-btn:hover {
+    background-color: #e65a50;
+  }
+  
+  .roadmap {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: #f4f4f4;
+    border-radius: 5px;
+    display: none;
+  }
+  
+  .roadmap.visible {
+    display: block;
+  }
+  
+  .roadmap h4 {
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .roadmap ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+    color: #555;
+  }

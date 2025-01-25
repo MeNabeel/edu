@@ -1,0 +1,92 @@
+/* Contact Us Page Styles */
+body {
+    background: url('https://images.unsplash.com/photo-1737031681027-fb111b4b745f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+    color: #fff;
+  }
+  
+  .contact-form {
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+  .contact-form .container {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .contact-form .container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .contact-form h2 {
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  .contact-form .form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .contact-form input:focus,
+  .contact-form select:focus,
+  .contact-form textarea:focus {
+    outline: none;
+    border-color: #ff6f61;
+  }
+  
+  .contact-form textarea {
+    resize: vertical;
+  }
+  
+  .contact-form .btn {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form .btn:hover {
+    background-color: #e65a50;
+  }
+  
+  #success-message {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background-color: #4caf50;
+    color: #fff;
+    border-radius: 5px;
+    display: none;
+  }
+  
+  #success-message.visible {
+    display: block;
+  }

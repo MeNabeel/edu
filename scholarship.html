@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Check Scholarship - Education Consultancy</title>
+  <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="styles/scholarship.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="d/Brown Vintage Scrapbook Welcome Channel Youtube Intro Video.png" alt="Logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="universities.html">Universities</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="degrees.html">Degrees</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Scholarship Form Section -->
+  <section class="scholarship-form">
+    <div class="container">
+      <h2>Check Scholarship Eligibility</h2>
+      <div class="form-container">
+        <form id="scholarshipForm">
+          <!-- Full Name -->
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter your full name" required>
+          </div>
+
+          <!-- Marks -->
+          <div class="form-group">
+            <label for="marks">Enter Your Marks (Out of 1200)</label>
+            <input type="number" id="marks" min="0" max="1200" placeholder="e.g., 950" required>
+          </div>
+
+          <!-- Interests -->
+          <div class="form-group">
+            <label for="interests">Your Interests</label>
+            <textarea id="interests" rows="4" placeholder="e.g., Programming, Art, Medicine" required></textarea>
+          </div>
+
+          <!-- Education Background -->
+          <div class="form-group">
+            <label for="background">Education Background</label>
+            <select id="background" required>
+              <option value="" disabled selected>Select an option</option>
+              <option value="ICS">Intermediate in Computer Science</option>
+              <option value="FSC-Bio">FSC (Biology)</option>
+              <option value="FSC-Math">FSC (Mathematics)</option>
+              <option value="FA">Fine Arts</option>
+              <option value="BA">Bachelor of Arts</option>
+            </select>
+          </div>
+
+          <!-- Special Requirements -->
+          <div class="form-group">
+            <label for="specialTest">Have you taken any special test?</label>
+            <select id="specialTest" required>
+              <option value="" disabled selected>Select an option</option>
+              <option value="none">None</option>
+              <option value="LAT">LAT (Law Admission Test)</option>
+              <option value="MDCAT">MDCAT (Medical Admission Test)</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="submit-btn">Check Eligibility</button>
+        </form>
+      </div>
+      <div id="responseMessage" class="response-message"></div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Education Consultancy. All rights reserved.</p>
+      <div class="footer-logos">
+        <img src="d/5296499_fb_facebook_facebook logo_icon.png" alt="Facebook">
+        <img src="d/5296516_tweet_twitter_twitter logo_icon.png" alt="Twitter">
+        <img src="d/whatsapp_2504957.png" alt="Whatsapp">
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for Scholarship Page -->
+  <script src="scripts/scholarship.js"></script>
+</body>
+</html>

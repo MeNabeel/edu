@@ -1,0 +1,125 @@
+/* Scholarship Page Styles */
+.scholarship-form {
+  padding: 4rem 0;
+  background: #f9f9f9;
+}
+
+.scholarship-form h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.scholarship-form .container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #ff6f61;
+  outline: none;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.submit-btn {
+  background-color: #ff6f61;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #e65a50;
+}
+
+.response-message {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: #f4f4f4;
+  border-radius: 5px;
+  text-align: center;
+  color: #333;
+}
+
+/* Footer Styles */
+footer {
+  background: #333;
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-logos {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-logos img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.footer-logos img:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .scholarship-form h2 {
+    font-size: 2rem;
+  }
+}

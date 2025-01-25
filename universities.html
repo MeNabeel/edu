@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Universities - Education Consultancy</title>
+  <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="styles/universities.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="d/Brown Vintage Scrapbook Welcome Channel Youtube Intro Video.png" alt="Logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="universities.html">Universities</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="degrees.html">Degrees</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Filters Section -->
+  <section class="filters">
+    <div class="container">
+      <h2>Filter Universities</h2>
+      <div class="filter-group">
+        <label for="city-filter">Filter by City:</label>
+        <select id="city-filter">
+          <option value="all">All Cities</option>
+          <option value="lahore">Lahore</option>
+          <option value="faisalabad">Faisalabad</option>
+          <option value="rawalpindi">Rawalpindi</option>
+          <option value="multan">Multan</option>
+          <option value="gujranwala">Gujranwala</option>
+          <option value="sialkot">Sialkot</option>
+          <option value="bahawalpur">Bahawalpur</option>
+          <option value="sargodha">Sargodha</option>
+          <option value="gujrat">Gujrat</option>
+          <option value="dera ghazi khan">Dera Ghazi Khan</option>
+          <option value="mianwali">Mianwali</option>
+          <option value="okara">Okara</option>
+          <option value="sahiwal">Sahiwal</option>
+          <option value="jhang">Jhang</option>
+          <option value="narowal">Narowal</option>
+          <option value="mandi bahauddin">Mandi Bahauddin</option>
+          <option value="chakwal">Chakwal</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <a href="#" id="government-btn" class="filter-btn icon-btn">
+          <img src="d/3319637_bank_building_government_panteon_icon.png" alt="Government">
+        </a>
+        <a href="#" id="private-btn" class="filter-btn icon-btn">
+          <img src="d/4634986_moneys_financial_layers_money_icon.png" alt="Private">
+        </a>
+      </div>
+      <div class="filter-group">
+        <a href="scholarship.html" class="btn">Check Scholarship</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filtered Universities List Section -->
+  <section class="universities-list hidden">
+    <div class="container">
+      <h2>Filtered Universities</h2>
+      <div id="university-results">
+        <!-- Filtered universities will be dynamically inserted here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- University Slideshow Section -->
+  <section class="university-slideshow">
+    <div class="container">
+      <h2>Featured Universities</h2>
+      <div class="slideshow-container">
+        <div class="slides">
+          <div class="slide">
+            <h3>University of the Punjab</h3>
+            <h3>Lahore University of Management Sciences (LUMS)</h3>
+            <h3>Government College University</h3>
+            <h3>King Edward Medical University</h3>
+            <h3>University of Veterinary and Animal Sciences</h3>
+            <h3>Information Technology University</h3>
+          </div>
+          <div class="slide">
+            <h3>University of Agriculture</h3>
+            <h3>University of Faisalabad</h3>
+            <h3>Faisalabad Medical University</h3>
+            <h3>Government College Women University</h3>
+            <h3>Fatima Jinnah Women University</h3>
+            <h3>Nishtar Medical University</h3>
+          </div>
+          <div class="slide">
+            <h3>Pir Mehr Ali Shah Arid Agriculture University</h3>
+            <h3>Bahauddin Zakariya University</h3>
+            <h3>Institute of Southern Punjab</h3>
+            <h3>GIFT University</h3>
+            <h3>Islamia University of Bahawalpur</h3>
+            <h3>Al Qadir University</h3>
+          </div>
+        </div>
+        <div class="slideshow-controls">
+          <button class="slideshow-btn" data-slide="0">1</button>
+          <button class="slideshow-btn" data-slide="1">2</button>
+          <button class="slideshow-btn" data-slide="2">3</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Education Consultancy. All rights reserved.</p>
+      <div class="footer-logos">
+        <img src="d/5296499_fb_facebook_facebook logo_icon.png" alt="Facebook">
+        <img src="d/5296516_tweet_twitter_twitter logo_icon.png" alt="Twitter">
+        <img src="d/whatsapp_2504957.png" alt="Whatsapp">
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for Universities Page -->
+  <script src="scripts/universities.js"></script>
+</body>
+</html>
