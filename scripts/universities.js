@@ -119,5 +119,5 @@ privateBtn.addEventListener("click", () => {
   filterUniversities();
 });
 
-// Initial display of all universities (hide universities list by default)
+
 filterUniversities();

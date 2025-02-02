@@ -6,11 +6,7 @@
   <title>Secret Society</title>
   <link rel="stylesheet" href="styles/global.css">
   <style>
-    /* Secret Society Page Styles */
-   /* body {
-    background: url('https://images.unsplash.com/photo-1643421500761-85acd909a772?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGlsbHVtaW5hdGl8ZW58MHx8MHx8fDA%3D') no-repeat center center/cover;
-    color: #fff;
-  }*/
+  
     body {
       background-color: #000;
       color: #fff;
@@ -152,8 +148,8 @@
     console.log("%cWelcome to the Secret Society", "color: #8b0000; font-size: 20px; font-weight: bold;");
     console.log("%cTo proceed, enter the secret password.", "color: #ccc; font-size: 16px;");
 
-    const secretPassword = 999; // Set the secret password
-    let attempts = 3; // Number of attempts allowed
+    const secretPassword = 999;
+    let attempts = 3;
 
     function checkPassword() {
       const password = prompt("Enter the secret password:");
@@ -191,7 +187,7 @@
       slides.style.transform = `translateX(-${currentSlideIndex * 100}%)`;
     }
 
-    setInterval(showNextSlide, 5000); // Change slide every 5 seconds
+    setInterval(showNextSlide, 5000); 
   </script>
 </body>
 </html>
